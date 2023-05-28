@@ -9,10 +9,11 @@ function App() {
   return (
     <div className="App">
     
-      
+    
       <MenuNavbar />
-      <Login />
+      <Login/>
       <header className="App-header">
+     
         <h1 style={{ fontSize: "4rem" }}>Encontre sua vaga de emprego</h1>
         <p class="search-banner__subtitle">São mais de 12.000 vagas</p>
         <div class="container-fluid">

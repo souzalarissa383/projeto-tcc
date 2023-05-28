@@ -5,7 +5,6 @@ import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 
-
 function MenuNavbar() {
   return (
     <router>
@@ -13,6 +12,7 @@ function MenuNavbar() {
         <Navbar bg="dark" expand="lg">
           <Container fluid>
             <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav
@@ -22,21 +22,17 @@ function MenuNavbar() {
               >
                 <Nav.Link href="#action1">Para você</Nav.Link>
                 <Nav.Link href="#action2">Para empresas</Nav.Link>
+                
+                <Nav.Link  href="#action3" to={"/login"}>Login</Nav.Link>
               </Nav>
 
-              <Nav.Link to={"/login"}>
-                Login
-              </Nav.Link>
+             
             </Navbar.Collapse>
           </Container>
         </Navbar>
       </div>
 
-      <div>
-    
-      
-
-      </div>
+      <div></div>
     </router>
   );
 }
